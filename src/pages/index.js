@@ -15,7 +15,9 @@ export default () => (
         </div>
       </button>
 
-      <h1>Hi, I'm Chris. 👋🏼</h1>
+      <h1>
+        Hi, I'm Chris. <span role="img" aria-label="Hi!">👋🏼</span>
+      </h1>
 
       <p className="center">
         I design and develop <span className="red">delightful</span> software solutions.
