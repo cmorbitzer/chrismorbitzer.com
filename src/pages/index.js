@@ -1,10 +1,10 @@
-import React from "react";
-import Layout from "../components/layout";
-import styles from "./index.module.scss";
-import avatar from "../assets/chris_avatar.jpg";
-import github from "../assets/GitHub-Mark-64px.png";
-import linkedin from "../assets/LI-In-Bug-black-64px.png";
-import spotify from "../assets/Spotify_Icon_RGB_Black-64px.png";
+import React from 'react';
+import Layout from '../components/layout';
+import styles from './index.module.scss';
+import avatar from '../assets/chris_avatar.jpg';
+import github from '../assets/GitHub-Mark-64px.png';
+import linkedin from '../assets/LI-In-Bug-black-64px.png';
+import spotify from '../assets/Spotify_Icon_RGB_Black-64px.png';
 
 export default () => (
   <Layout>
