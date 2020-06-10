@@ -2,7 +2,6 @@
   "name": "chrismorbitzer.com",
   "private": true,
   "description": "Source code for chrismorbitzer.com",
-  "version": "0.1.0",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -13,16 +12,16 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.19.45",
-    "gatsby-plugin-react-helmet": "^3.2.1",
-    "gatsby-plugin-sass": "^2.2.1",
-    "node-sass": "^4.13.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "gatsby": "^2.23.3",
+    "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-sass": "^2.3.4",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.0.2"
+    "prettier": "2.0.5"
   },
   "repository": {
     "type": "git",
