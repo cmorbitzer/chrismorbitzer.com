@@ -15,4 +15,4 @@ tagline:
 ## Let's Connect
 
 - I'm most active on [LinkedIn](https://www.linkedin.com/in/chrismorbitzer/) where I share thoughts on manufacturing software and AI.
-- I also occasionally write on my newsletter where I go deep on topics at the intersection of community, technology, and faith.
+- I publish a newsletter exploring the intersection of community, technology, and faith.
