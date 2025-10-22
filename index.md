@@ -6,9 +6,9 @@ tagline:
 
 ## About Me
 
-- Husband
-- Father of four young children
 - Founder and CEO of [NorthBuilt](https://northbuilt.com), where I'm building a software team around a culture of family, conscientiousness, and craftsmanship.
+- Husband of [Briann Morbitzer](https://www.superiorspeech.mn/), Twin Cities-based SLP and stuttering specialist
+- Father of four young children
 - AI optimist
 - Mediocre triathlete
 
