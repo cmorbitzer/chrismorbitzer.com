@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=News+Cycle:wght@400;700&family=Raleway:wght@600;700;800&display=swap');
+
+:root {
+  /* Color Palette */
+  --olive-green: #5A7302;
+  --tan: #BFA36F;
+  --brown: #736243;
+  --terracotta: #D98E73;
+  --coral: #F28379;
+
+  /* Light Mode Colors */
+  --bg-primary: #faf9f7;
+  --text-primary: var(--brown);
+  --text-heading: var(--coral);
+  --link-color: var(--terracotta);
+  --link-hover: var(--coral);
+  --accent: var(--olive-green);
+}
+
+[data-theme="dark"] {
+  /* Dark Mode Color Palette */
+  --charcoal: #1a1a1a;
+  --beige: #d4c5a9;
+  --salmon: #F28379;
+  --peach: #ff9d95;
+  --lime: #7ea503;
+  --slate: #5f7a7a;
+
+  --bg-primary: var(--charcoal);
+  --text-primary: var(--beige);
+  --text-heading: var(--salmon);
+  --link-color: var(--salmon);
+  --link-hover: var(--peach);
+  --accent: var(--lime);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.avatar-ring {
+  width: 200px;
+  height: 200px;
+  border: 4px solid var(--olive-green);
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.header-content {
+  flex: 1;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: var(--text-heading);
+  font-size: 3em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.5em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.intro {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--text-primary);
+  margin-bottom: 0;
+}
+
+main h2 {
+  margin-top: 3rem;
+}
+
+main h2:first-of-type {
+  margin-top: 0;
+}
+
+main > p {
+  margin-bottom: 2rem;
+}
+
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.newsletter-section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: rgba(90, 115, 2, 0.05);
+  border-radius: 8px;
+}
+
+[data-theme="dark"] .newsletter-section {
+  background: rgba(126, 165, 3, 0.1);
+}
+
+.newsletter-section h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+}
+
+.newsletter-section iframe {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* Dark Mode Toggle Switch */
+.theme-toggle {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 50px;
+  height: 30px;
+  background: var(--tan);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  padding: 0;
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: var(--slate);
+}
+
+.theme-toggle:hover {
+  opacity: 0.9;
+}
+
+/* Circle slider in light mode */
+.theme-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Crescent shape in dark mode */
+[data-theme="dark"] .theme-icon {
+  transform: translateX(20px);
+}
+
+[data-theme="dark"] .theme-icon::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--slate);
+  top: 0px;
+  left: -9px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar-ring {
+    margin-bottom: 1rem;
+  }
+
+  .theme-toggle {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .newsletter-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .newsletter-section iframe {
+    width: 100%;
+    height: 280px;
+  }
+}
+

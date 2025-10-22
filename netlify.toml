@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+# Optional: Set Node.js version
+[build.environment]
+  NODE_VERSION = "18"
+
+# Optional: Redirect rules
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+
